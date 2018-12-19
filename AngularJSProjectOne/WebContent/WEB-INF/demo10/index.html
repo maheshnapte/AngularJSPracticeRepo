@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<style>
+div {
+	border-style: outset;
+}
+</style>
+
+<body>
+
+	<div ng-app="myApp" ng-controller="namesCtrl">
+		<span>{{msg}}</span>
+		<div ng-app="myApp" ng-controller="namesCtrl1">
+			<span>{{msg}}</span>
+			<div ng-app="myApp" ng-controller="namesCtrl2">
+				<span>{{msg}}</span>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<script src="src.js"></script>
+</body>
+</html>
